@@ -1,0 +1,569 @@
+/* ==========================================
+            WORKFLOW SECTION
+========================================== */
+
+.workflow{
+    position: relative;
+    padding: 140px 0;
+    background: #050505;
+    overflow: hidden;
+}
+
+.workflow::before{
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    left: 50%;
+    top: -350px;
+    transform: translateX(-50%);
+    background: radial-gradient(
+        circle,
+        rgba(255,255,255,.05),
+        transparent 70%
+    );
+    pointer-events: none;
+}
+
+.workflow-container{
+    width: min(1280px,92%);
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* ==========================================
+                HEADER
+========================================== */
+
+.workflow-header{
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 90px;
+}
+
+.workflow-label{
+    display: inline-block;
+    color: #888;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.workflow-header h2{
+    color: #fff;
+    font-size: clamp(48px,6vw,78px);
+    line-height: 1.05;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.workflow-header p{
+    color: #9a9a9a;
+    font-size: 22px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+            WORKFLOW GRID
+========================================== */
+
+.workflow-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 32px;
+    align-items: stretch;
+}
+
+.workflow-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========================================
+              TOP TIMELINE
+========================================== */
+
+.workflow-top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.step-icon{
+    width: 74px;
+    height: 74px;
+    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-shrink: 0;
+    transition: .35s;
+}
+
+.step-icon:hover{
+    transform: translateY(-4px);
+    border-color: rgba(255,255,255,.15);
+}
+
+.step-number{
+    margin-left: 20px;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 1;
+    color: rgba(255,255,255,.18);
+}
+
+.step-line{
+    flex: 1;
+    margin-left: 20px;
+    border-top: 2px dashed rgba(255,255,255,.15);
+}
+
+.step-arrow{
+    margin-left: 18px;
+    color: rgba(255,255,255,.35);
+}
+
+/* ==========================================
+              RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .workflow-grid{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .workflow{
+        padding:90px 0;
+    }
+
+    .workflow-header{
+        margin-bottom:60px;
+    }
+
+    .workflow-header h2{
+        font-size:42px;
+    }
+
+    .workflow-header p{
+        font-size:17px;
+    }
+
+    .step-icon{
+        width:62px;
+        height:62px;
+        border-radius:18px;
+    }
+
+    .step-number{
+        font-size:54px;
+    }
+
+}
+/* ==========================================
+            CARD 1
+========================================== */
+
+.workflow-card{
+    background:#0b0b0b;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
+    padding:34px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    transition:.35s ease;
+}
+
+.workflow-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(255,255,255,.15);
+}
+
+.workflow-card h3{
+    color:#fff;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.workflow-card>p{
+    color:#9d9d9d;
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:28px;
+}
+
+/* ---------------- Idea Box ---------------- */
+
+.idea-box{
+    flex:1;
+    background:#101010;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:22px;
+}
+
+.idea-label{
+    color:#808080;
+    font-size:13px;
+    font-weight:500;
+}
+
+.idea-input{
+    margin-top:18px;
+    background:#0c0c0c;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:24px;
+    min-height:210px;
+    position:relative;
+}
+
+.idea-input p{
+    color:#fff;
+    font-size:20px;
+    line-height:1.8;
+    margin:0;
+    padding-right:70px;
+}
+
+.send-btn{
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    color:#000;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.send-btn:hover{
+    transform:scale(1.08);
+}
+
+/* ---------------- Tags ---------------- */
+
+.idea-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:28px;
+}
+
+.idea-tags span{
+    padding:10px 18px;
+    border-radius:999px;
+    background:#111;
+    border:1px solid rgba(255,255,255,.08);
+    color:#e5e5e5;
+    font-size:13px;
+    transition:.3s;
+}
+
+.idea-tags span:hover{
+    border-color:rgba(255,255,255,.18);
+    background:#171717;
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media(max-width:768px){
+
+    .workflow-card{
+        padding:26px;
+    }
+
+    .workflow-card h3{
+        font-size:22px;
+    }
+
+    .workflow-card>p{
+        font-size:16px;
+    }
+
+    .idea-input{
+        min-height:180px;
+    }
+
+    .idea-input p{
+        font-size:17px;
+    }
+
+}
+/* ==========================================
+                CARD 2
+========================================== */
+
+.progress-box{
+    flex:1;
+    margin-top:24px;
+    background:#101010;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:12px 22px;
+}
+
+.progress-item{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    padding:20px 0;
+    color:#d8d8d8;
+    font-size:16px;
+    font-weight:500;
+}
+
+.progress-item:not(:last-child){
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.status{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border:2px solid rgba(255,255,255,.22);
+    flex-shrink:0;
+    position:relative;
+}
+
+/* Completed */
+
+.complete .status{
+    background:#38d982;
+    border-color:#38d982;
+}
+
+.complete .status::after{
+    content:"✓";
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-55%);
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+}
+
+/* Active */
+
+.active .status{
+    border-color:#6b7cff;
+}
+
+.active .status::after{
+    content:"";
+    position:absolute;
+    inset:4px;
+    border-radius:50%;
+    background:#6b7cff;
+}
+
+.active .status{
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        box-shadow:0 0 0 0 rgba(107,124,255,.45);
+    }
+
+    100%{
+        box-shadow:0 0 0 10px rgba(107,124,255,0);
+    }
+
+}
+
+/* Progress */
+
+.overall-progress{
+    margin-top:28px;
+}
+
+.progress-text{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:14px;
+}
+
+.progress-bar{
+    width:100%;
+    height:8px;
+    background:#1b1b1b;
+    border-radius:999px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    width:72%;
+    height:100%;
+    background:#ffffff;
+    border-radius:999px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .progress-item{
+        font-size:15px;
+        gap:12px;
+        padding:18px 0;
+    }
+
+    .status{
+        width:18px;
+        height:18px;
+    }
+
+}
+/* ==========================================
+                CARD 3
+========================================== */
+
+.dashboard-preview{
+    flex:1;
+    margin-top:24px;
+    background:#101010;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:18px;
+}
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.dashboard-header span:first-child{
+    color:#ffffff;
+    font-size:15px;
+    font-weight:600;
+}
+
+.live-status{
+    color:#3ddc84;
+    font-size:14px;
+    font-weight:600;
+}
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.dashboard-box{
+    background:#171717;
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:16px;
+    padding:18px;
+    transition:.3s;
+}
+
+.dashboard-box:hover{
+    border-color:rgba(255,255,255,.15);
+}
+
+.dashboard-box small{
+    display:block;
+    color:#8c8c8c;
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.dashboard-box h4{
+    color:#ffffff;
+    font-size:32px;
+    margin:0;
+    font-weight:700;
+}
+
+.tech-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:24px;
+}
+
+.tech-tags span{
+    padding:10px 18px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.08);
+    background:#111111;
+    color:#e5e5e5;
+    font-size:13px;
+    transition:.3s;
+}
+
+.tech-tags span:hover{
+    background:#181818;
+    border-color:rgba(255,255,255,.18);
+}
+
+.workspace-btn{
+    width:100%;
+    height:58px;
+    margin-top:28px;
+    border:none;
+    border-radius:18px;
+    background:#ffffff;
+    color:#000000;
+    font-size:18px;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.workspace-btn:hover{
+    transform:translateY(-2px);
+}
+
+.workspace-btn span{
+    font-size:22px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .dashboard-box h4{
+        font-size:28px;
+    }
+
+    .workspace-btn{
+        height:54px;
+        font-size:16px;
+    }
+
+}

@@ -1,0 +1,545 @@
+.features{
+
+    width:100%;
+    background:#050505;
+    padding:90px 8%;
+
+}
+
+.features-header{
+
+    max-width:900px;
+    margin:0 auto 70px;
+    text-align:center;
+
+}
+
+.section-label{
+
+    color:#8b8b8b;
+    font-size:13px;
+    letter-spacing:1px;
+
+}
+
+.features-header h2{
+
+    font-size:58px;
+    font-weight:600;
+    line-height:1.15;
+    letter-spacing:-1.5px;
+    max-width:850px;
+    margin:18px auto 20px;
+
+}
+
+.features-header p{
+
+    color:#8b8b8b;
+    font-size:19px;
+    line-height:1.8;
+
+}
+
+.features-grid{
+
+    display:grid;
+    grid-template-columns:330px 1fr;
+    gap:28px;
+    align-items:stretch;
+
+}
+
+.feature-column{
+
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+
+}
+
+.feature-card{
+
+    background:#0b0b0b;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:34px;
+    transition:.3s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-4px);
+    border-color:rgba(255,255,255,.18);
+
+}
+
+.icon-box{
+
+    width:52px;
+    height:52px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:14px;
+
+    background:#121212;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    margin-bottom:24px;
+
+}
+
+.feature-card h3{
+
+    color:white;
+    font-size:28px;
+    margin-bottom:18px;
+
+}
+
+.feature-card p{
+
+    color:#9a9a9a;
+    line-height:1.8;
+
+}
+
+.editor-card{
+
+    background:#090909;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.editor-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(255,255,255,.15);
+
+}
+
+.editor-top{
+
+    height:64px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 24px;
+
+}
+
+.editor-dots{
+
+    display:flex;
+    gap:8px;
+
+}
+
+.editor-dots span{
+
+    width:11px;
+    height:11px;
+    border-radius:50%;
+    background:#3a3a3a;
+
+}
+
+.editor-title{
+
+    color:white;
+    font-size:15px;
+
+}
+
+.editor-body{
+
+    padding:32px;
+
+}
+
+.editor-body pre{
+
+    color:#d8d8d8;
+    font-size:15px;
+    line-height:2;
+    font-family:monospace;
+
+}
+.editor-body{
+
+    display:grid;
+
+    grid-template-columns:220px 1fr 280px;
+
+    min-height:430px;
+
+}
+
+.explorer{
+
+    border-right:1px solid rgba(255,255,255,.08);
+
+    padding:22px;
+
+}
+
+.explorer-title{
+
+    color:#7d7d7d;
+
+    font-size:12px;
+
+    letter-spacing:1px;
+
+}
+
+.explorer ul{
+
+    list-style:none;
+
+    padding:18px 0 0;
+
+    margin:0;
+
+}
+
+.explorer li{
+
+    color:#b8b8b8;
+
+    margin-bottom:14px;
+
+    font-size:14px;
+
+}
+
+.editor-main{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.editor-tabs{
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:0 24px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.editor-tabs span{
+
+    color:#888;
+
+    font-size:14px;
+
+}
+
+.active-tab{
+
+    color:white !important;
+
+}
+
+.editor-main pre{
+
+    padding:24px;
+
+    color:#ddd;
+
+    font-size:14px;
+
+    line-height:2;
+
+    font-family:monospace;
+
+}
+
+.assistant-panel{
+
+    border-left:1px solid rgba(255,255,255,.08);
+
+    padding:22px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.assistant-badge{
+
+    align-self:flex-start;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    background:#101010;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:13px;
+
+    margin-bottom:22px;
+
+}
+
+.chat-box{
+
+    background:#111;
+
+    border-radius:12px;
+
+    padding:14px;
+
+    color:#d8d8d8;
+
+    font-size:14px;
+
+    margin-bottom:14px;
+
+}
+
+.reply{
+
+    background:#181818;
+
+}
+
+.assistant-panel input{
+
+    margin-top:auto;
+
+    height:46px;
+
+    border-radius:10px;
+
+    background:#0d0d0d;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:0 16px;
+
+    color:white;
+
+}
+.workspace-card{
+
+    margin-top:30px;
+
+    display:grid;
+
+    grid-template-columns:1fr 520px;
+
+    gap:30px;
+
+    background:#0b0b0b;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:45px;
+
+}
+
+.workspace-label{
+
+    color:#8b8b8b;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+
+}
+
+.workspace-left h3{
+
+    margin-top:18px;
+
+    color:white;
+
+    font-size:40px;
+
+    line-height:1.25;
+
+}
+
+.workspace-left p{
+
+    margin-top:22px;
+
+    color:#9a9a9a;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+    max-width:520px;
+
+}
+
+.workspace-buttons{
+
+    margin-top:40px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+
+.workspace-buttons button{
+
+    background:#111;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:10px;
+
+    padding:12px 22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.workspace-buttons button:hover{
+
+    border-color:rgba(255,255,255,.18);
+
+    transform:translateY(-2px);
+
+}
+
+.dashboard{
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:16px;
+
+    padding:25px;
+
+}
+
+.dashboard-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+.status{
+
+    color:#6EE7B7;
+
+}
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.mini-card{
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:12px;
+
+    padding:22px;
+
+}
+
+.mini-card h4{
+
+    color:#9a9a9a;
+
+    font-size:14px;
+
+    margin-bottom:12px;
+
+}
+
+.mini-card p{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:600;
+
+}
+.typing-cursor{
+
+    display:inline-block;
+
+    width:2px;
+    height:18px;
+
+    background:white;
+
+    margin-left:4px;
+
+    animation:blink 1s infinite;
+
+}
+
+@keyframes blink{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}

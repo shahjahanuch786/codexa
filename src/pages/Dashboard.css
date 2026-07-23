@@ -1,0 +1,735 @@
+/* ==========================================
+   CODEXA DASHBOARD MAIN LAYOUT
+========================================== */
+
+
+.codexa-dashboard-layout {
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+
+    background:#f8f9fc;
+
+}
+
+
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+
+.codexa-dashboard-sidebar-wrapper {
+
+    width:300px;
+
+    height:100vh;
+
+    flex-shrink:0;
+
+    background:#ffffff;
+
+    border-right:1px solid #ececf3;
+
+}
+
+
+
+/* Existing Sidebar Support */
+
+
+.dashboard-sidebar {
+
+    width:100%;
+
+    height:100%;
+
+    background:#ffffff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:28px 24px;
+
+    color:#111827;
+
+}
+
+
+
+/* ==========================================
+   SIDEBAR LOGO
+========================================== */
+
+
+.dashboard-logo {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-bottom:34px;
+
+}
+
+
+
+.dashboard-logo-icon {
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        #6C63FF,
+        #8B5CF6
+    );
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+.dashboard-logo-cube {
+
+    width:20px;
+
+    height:20px;
+
+    background:white;
+
+    border-radius:6px;
+
+    transform:rotate(45deg);
+
+}
+
+
+
+.dashboard-logo-text h2 {
+
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+
+
+.dashboard-logo-text span {
+
+    color:#635BFF;
+
+}
+
+
+
+/* ==========================================
+   WORKSPACE BUTTON
+========================================== */
+
+
+.dashboard-workspace-btn {
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+    padding:14px 16px;
+
+
+    border-radius:16px;
+
+
+    border:1px solid #ececf3;
+
+
+    background:#ffffff;
+
+
+    margin-bottom:36px;
+
+
+}
+
+
+
+.dashboard-workspace-left {
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+
+.dashboard-workspace-circle {
+
+
+    width:36px;
+
+    height:36px;
+
+
+    border-radius:50%;
+
+
+    background:#EEF2FF;
+
+
+    color:#635BFF;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+.dashboard-workspace-left span {
+
+
+    color:#374151;
+
+}
+
+
+
+/* ==========================================
+   SIDEBAR MENU
+========================================== */
+
+
+.dashboard-menu {
+
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+
+
+.dashboard-menu-item {
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+
+    padding:14px 18px;
+
+
+    border-radius:14px;
+
+
+    color:#4B5563;
+
+
+    cursor:pointer;
+
+}
+
+
+
+.dashboard-menu-item svg {
+
+
+    width:20px;
+
+    height:20px;
+
+    color:#4B5563;
+
+}
+
+
+
+.dashboard-menu-item span {
+
+
+    color:#374151;
+
+    font-size:15px;
+
+}
+
+
+
+.dashboard-menu-item:hover {
+
+
+    background:#f5f7ff;
+
+}
+
+
+
+.dashboard-menu-active {
+
+
+    background:#EEF2FF;
+
+}
+
+
+
+.dashboard-menu-active svg,
+.dashboard-menu-active span {
+
+
+    color:#635BFF;
+
+}
+
+
+
+/* ==========================================
+   SIDEBAR BOTTOM
+========================================== */
+
+
+.dashboard-sidebar-bottom {
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+
+
+.dashboard-upgrade {
+
+
+    padding:16px;
+
+    border-radius:16px;
+
+
+    background:#EEF2FF;
+
+
+    color:#635BFF;
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+
+.dashboard-upgrade span {
+
+
+    color:#635BFF;
+
+}
+
+
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+
+.codexa-dashboard-main {
+
+
+    flex:1;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+
+.codexa-dashboard-header {
+
+
+    width:100%;
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    padding:24px 40px;
+
+
+    background:#ffffff;
+
+
+    border-bottom:1px solid #ececf3;
+
+
+}
+
+
+
+.codexa-dashboard-header-title {
+
+
+    margin:0;
+
+
+    color:#111827;
+
+
+    font-size:28px;
+
+
+    font-weight:700;
+
+
+}
+
+
+
+.codexa-dashboard-header-description {
+
+
+    margin:8px 0 0;
+
+
+    color:#6b7280;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+/* ==========================================
+   WORKSPACE
+========================================== */
+
+
+.codexa-dashboard-workspace {
+
+
+    flex:1;
+
+
+    padding:45px 40px;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    align-items:center;
+
+
+    gap:35px;
+
+
+}
+
+
+
+/* ==========================================
+   WELCOME
+========================================== */
+
+
+.codexa-dashboard-welcome-section {
+
+
+    width:100%;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.codexa-dashboard-ai-orb {
+
+
+    width:90px;
+
+
+    height:90px;
+
+
+    border-radius:50%;
+
+
+    background:
+    radial-gradient(
+        circle at 30% 30%,
+        #c7d2fe,
+        #635bff,
+        #4338ca
+    );
+
+
+    margin-bottom:28px;
+
+
+}
+
+
+
+.codexa-dashboard-welcome-title {
+
+
+    margin:0;
+
+
+    color:#111827;
+
+
+    font-size:42px;
+
+
+}
+
+
+
+.codexa-dashboard-welcome-description {
+
+
+    color:#6b7280;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+/* ==========================================
+   FEATURE CARDS
+========================================== */
+
+
+.codexa-dashboard-feature-grid {
+
+
+    width:100%;
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:22px;
+
+
+}
+
+
+
+.codexa-dashboard-feature-card {
+
+
+    padding:24px;
+
+
+    background:white;
+
+
+    border:1px solid #ececf3;
+
+
+    border-radius:20px;
+
+
+}
+
+
+
+.codexa-dashboard-feature-title {
+
+
+    color:#111827;
+
+
+}
+
+
+
+.codexa-dashboard-feature-description {
+
+
+    color:#6b7280;
+
+
+}
+
+
+
+/* ==========================================
+   PROMPT BOX
+========================================== */
+
+
+.codexa-dashboard-prompt-container {
+
+
+    width:100%;
+
+
+    max-width:980px;
+
+
+    background:white;
+
+
+    border:1px solid #e5e7eb;
+
+
+    border-radius:22px;
+
+
+    padding:18px;
+
+
+}
+
+
+
+.codexa-dashboard-prompt-placeholder {
+
+
+    color:#9ca3af;
+
+
+}
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+
+@media(max-width:900px){
+
+
+.codexa-dashboard-sidebar-wrapper {
+
+
+    width:240px;
+
+
+}
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.codexa-dashboard-sidebar-wrapper {
+
+
+    display:none;
+
+
+}
+
+
+.codexa-dashboard-feature-grid {
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+.codexa-dashboard-workspace {
+
+
+    padding:25px;
+
+
+}
+
+
+
+}
